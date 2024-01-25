@@ -1,0 +1,100 @@
+{
+    // "$schema": "https://json.schemastore.org/settings",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "'Inconsolata', 'LXGW WenKai Mono', monospace",
+    "editor.fontSize": 16,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.inlineSuggest.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.guides.bracketPairs": true,
+    "editor.detectIndentation": false,                  // Tab Size /Insert Spaces
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "*.do": "tcl", "transcript": "log"
+    },
+    "files.exclude": {
+        "**/**.bak": true
+    },
+
+    "workbench.list.horizontalScrolling": true,         // 资源管理器滚动条
+    "workbench.list.smoothScrolling": true,
+    "workbench.localHistory.maxFileSize": 1024,
+    "workbench.editor.wrapTabs": true,                  // 多文件分行显示
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Houston",
+
+    "material-icon-theme.folders.associations": {
+        "prj": "project", "sim": "target", "user": "mock"
+    },
+
+    "terminal.integrated.fontFamily": "'Inconsolata', 'LXGW WenKai Mono', monospace",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.ignoreBracketedPasteMode": true,
+    "terminal.integrated.smoothScrolling": true,
+
+    "markdown.extension.toc.orderedList": true,         // 使用有序列表
+    "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "markdownlint.config": {
+        "default": true,
+        "MD033": {              // 关闭html标签警告(MD033号Warning)
+          "allowed_elements": [ "font", "li", "table", "tr", "td" ]
+        },
+        "MD029": false          // 关闭列表不间断警告(MD029号Warning)
+    },
+
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+    "todo-tree.general.tags": [    
+        "TODO", "BUG", "FIXME", "TAG", "DONE", "MARK", "TEST", "UPDATE"
+    ],
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.highlights.defaultHighlight": {  //如果相应变量没赋值就会使用这里的默认值
+        "foreground": "#000000",    //字体颜色
+        "background": "#c9c552",    //背景色
+        "icon": "check",              //标签样式 check 是一个对号的样式
+        "rulerColour": "#c9c552",   //边框颜色
+        "type": "tag",                //填充色类型  可在TODO TREE 细节页面找到允许的值 
+        "iconColour": "#c9c552"     //标签颜色
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": { "icon": "alert", "background": "#c9c552", "rulerColour": "#c9c552", "iconColour": "#c9c552" },
+        "BUG": { "icon": "bug", "background": "#eb5c5c", "rulerColour": "#eb5c5c", "iconColour": "#eb5c5c" },
+        "FIXME": { "icon": "bug", "background": "#eb5c5c", "rulerColour": "#eb5c5c", "iconColour": "#eb5c5c" },
+        "TAG": { "icon": "tag", "background": "#38b2f4", "rulerColour": "#38b2f4", "iconColour": "#38b2f4", "rulerLane": "full" },
+        "DONE": { "icon": "check", "background": "#5eec95", "rulerColour": "#5eec95", "iconColour": "#5eec95" },
+        "MARK": { "icon": "note", "background": "#f90", "rulerColour": "#f90", "iconColour": "#f90" },
+        "TEST": { "icon": "flame", "background": "#df7be6", "rulerColour": "#df7be6", "iconColour": "#df7be6" },
+        "UPDATE": { "icon": "versions", "background": "#d65d8e", "rulerColour": "#d65d8e", "iconColour": "#d65d8e" }
+    },
+    "better-comments.tags": [
+        {
+            "tag": "todo", "color": "#8F9299", "strikethrough": false, "underline": false,
+            "backgroundColor": "transparent", "bold": false, "italic": false
+        },
+    ],
+
+    "hediet.vscode-drawio.theme": "dark",
+
+    "digital-ide.function.lsp.linter.systemverilog.diagnostor": "vivado",
+    "digital-ide.prj.vivado.install.path": "D:\\Codes\\Xilinx\\APP\\Vivado\\2023.2\\bin",
+
+}
